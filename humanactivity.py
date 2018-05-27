@@ -21,11 +21,11 @@ from keras import backend as K
 
 
 # Enter here the path to the model weights files:
-weights_path = '/home/oswaldo/video_classification/competitionKaggle/vgg16_weights.h5'
+weights_path = '/home/najeeb/competitionKaggle/vgg16_weights.h5'
 # Enter here the path to the top-model weights files:
-top_model_weights_path = '/home/oswaldo/video_classification/competitionKaggle/fc_model.h5'
+top_model_weights_path = '/home/najeeb/competitionKaggle/fc_model.h5'
 # Enter here the path for storage of the whole model weights (VGG16+top classifier model):
-whole_model_weights_path = '/home/oswaldo/video_classification/competitionKaggle/whole_model.h5'
+whole_model_weights_path = '/home/najeeb/competitionKaggle/whole_model.h5'
 # Enter here the name of the folder that contains the folders c0, c1,..., c9, with the training images belonging to classes 0 to 9:
 train_data_dir = 'train'
 # Enter here the name of the folder where is the test images (the data evalueted in the private leaderboard):
@@ -34,13 +34,13 @@ test_data_dir = 'test'
 test_images_path = 'test/test'
 
 # Enter here the features of the data set:
-img_width, img_height = 224, 224
+img_width, img_height = 220, 220
 nb_train_samples = 22424
 nb_test_samples = 79726
 color_type_global = 3
 
 # You can set larger values here, according with the memory of your GPU:
-batch_size = 35
+batch_size = 55
 
 # Enter here the number of training epochs (with 80 epochs the model was positioned among
 # the 29% best competitors in the private leaderboard of state-farm-distracted-driver-detection)
@@ -49,7 +49,7 @@ batch_size = 35
 nb_epoch = 75
 
 #Enter here the path for the whole model (VGG16+top classifier model):
-whole_model_weights_path = '/home/oswaldo/video_classification/competitionKaggle/whole_model.h5'
+whole_model_weights_path = '/home/najeeb/competitionKaggle/whole_model.h5'
 
 # build the VGG16 network:
 model = Sequential()
